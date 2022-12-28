@@ -116,7 +116,7 @@ export default function Navbar() {
                 onClick={()=> navigate("/")}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                Home
+                🏠
               </Button>
             <Button
         id="demo-positioned-button"
