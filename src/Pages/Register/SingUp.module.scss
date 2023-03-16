@@ -1,0 +1,49 @@
+.conteiner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(112,61,42);
+    background: linear-gradient(225deg, rgba(112,61,42,1) 28%, rgba(190,160,98,1) 100%);
+}
+
+.conteinerForm{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: aliceblue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    // text-align: center;
+    place-self: center;
+    margin-top: 50px;
+}
+.email{
+    color: aliceblue;
+    // text-align: center;
+    place-self: center;
+    
+}
+
+.text{
+    margin-bottom: 0px;
+    margin-left: 8px;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+.buttonLogin{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.textField{
+    background-color: aliceblue;
+}
+
+.textFieldEmail{
+    background-color: aliceblue;
+}
