@@ -1,0 +1,22 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60px;
+    max-height: 60px;
+}
+.cont:hover{
+    .imagen{
+        scale: 1.1;
+    }
+    .text{
+        opacity: 100%;
+        size: 20px;
+        color:rgb(1, 29, 94);
+    }
+}
+.imagen{
+    width: 50px;
+    height: auto;
+}

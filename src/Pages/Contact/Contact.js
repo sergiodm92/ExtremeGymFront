@@ -3,7 +3,8 @@ import React from "react";
 import swal from "sweetalert";
 import emailjs from 'emailjs-com';
 import Navbar from "../../Components/Navbar/Navbar";
-import style from './Contact.module.scss'
+import style from './Contact.module.scss';
+import ButtonNetworks from "../../Components/Buttons/Button_Networks/Button_Networks";
 
 const Contact = ()=>{
 
@@ -55,14 +56,22 @@ const Contact = ()=>{
                     <div className={style.info}>
                         <div className={style.bigOne}><h2>Información de contacto</h2></div>
                         <div><p className={style.coment}>📱 +54 9 387 683-3158</p></div>
-                        <div>
-                            <a href="https://wa.me/+5493876833158" className={style.contactButtons}><Button variant="contained" size="large" style={{backgroundColor:"#BEA062"}}>WhatsApp</Button></a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/extremegym.salta/" className={style.contactButtons}><Button variant="contained" size="large" style={{backgroundColor:"#BEA062"}}>Instagram</Button></a>
-                        </div>
-                        <div>
-                            <a href="https://www.facebook.com/extremegym08" className={style.contactButtons}><Button variant="contained" size="large" style={{backgroundColor:"#BEA062"}}>Facebook</Button></a>
+                        <div className={style.links}>
+                            <a href="https://wa.me/+5493876833158" >
+                                <ButtonNetworks
+                                    img={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/640px-WhatsApp_icon.png"}
+                                />
+                            </a>
+                            <a href="https://www.instagram.com/extremegym.salta/" >
+                                <ButtonNetworks
+                                    img={"https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/033fd-logo-instagram-icon.png?fit=512%2C512&ssl=1"}
+                                />
+                            </a>
+                            <a href="https://www.facebook.com/extremegym08" >
+                                <ButtonNetworks
+                                    img={"https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/2048px-Facebook_f_logo_%282019%29.svg.png"}
+                                />
+                            </a>
                         </div>
                     </div>
                 </div>
